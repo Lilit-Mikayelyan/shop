@@ -37,15 +37,16 @@
 		  My account
 		  </button>
 			 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			   <a class="dropdown-item" href="#">
+			   <a class="dropdown-item" href="history.html">
 			   	<button type="button" class="btn btn-primary">		
 			   	  wishlist <span class="badge badge-light">9</span>
  						 <span class="sr-only">unread messages</span>
 				</button>
 			  </a>
+		       <a class="dropdown-item" href="account.html">Info</a>
 		       <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
 		  	   <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registrationModal">Registration</a>
-		  	   <a class="dropdown-item" href="#">Shopping history</a>
+		  	   <a class="dropdown-item" href="history.html">Shopping history</a>
  		 	 </div>
 	  </div>
 	</div>
@@ -91,14 +92,14 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer01">First name</label>
-      <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+      <input type="text" class="form-control is-valid" id="validationServer01" value="Lilith" required>
       <div class="valid-feedback">
         Looks good!
       </div>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer02">Last name</label>
-      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+      <input type="text" class="form-control is-valid" id="validationServer02" value="Mikayelyan" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -165,22 +166,15 @@
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 	    <ul class="navbar-nav">
+	      <li class="navbar-nav mr-auto">
+        	<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>	      
+          </li>
 	      <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown
+	          Shop
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="#">Action</a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="shop.html">shop</a>
 	          <a class="dropdown-item" href="#">Another action</a>
 	          <a class="dropdown-item" href="#">Something else here</a>
 	        </div>
@@ -209,13 +203,13 @@
 	</nav>
 
 
-    <div id="carouselExampleIndicators" class="carousel slide bg-warning" data-ride="carousel">
+    <div id="carouselExampleIndicators" style="min-height: 231px;" class="carousel slide bg-warning  d-none d-sm-none d-xl-block d-lg-block d-md-none" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner d-none d-sm-none d-xl-block d-lg-block d-md-block">
+  <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="row"><div class="col col-xl-6 col-lg-6">
       <img src="https://purepng.com/public/uploads/large/purepng.com-digital-photo-cameracameraphotodigital-cameravideophoto-machinephoto-maker-231519335230wccq2.png" class="d-block ml-auto img-fluid w-50" alt="...">
@@ -312,64 +306,68 @@
 
 
  <div class="container">
- 	<h3 class="col-xl-2 col-lg-2 d-xl-block d-lg-block d-md-none d-sm-none d-none mx-auto" style="width: 200px;">
+ 	<h3 class="mx-auto" style="width: 200px;">
  Sales
 	</h3>
   	<div class="row">
- 	<div class="card col-xl-4 col-lg-4 d-xl-block d-lg-block d-md-none d-sm-none d-none">
- 	 <img class="card-img-top" src="https://celsite.vteximg.com.br/arquivos/ids/181797-1000-1000/Capas-iphone-7-Plus-Grafite.jpg?v=636562118150330000" alt="Card image cap">
+ 	<div class="col-xl-4 col-lg-4">
+ 		<div class="card" >
+ 	 <img class="card-img-top img-fluid" src="https://celsite.vteximg.com.br/arquivos/ids/181797-1000-1000/Capas-iphone-7-Plus-Grafite.jpg?v=636562118150330000" alt="Card image cap">
 	 <div class="card-body">
    	 <h5 class="card-title">IPhone</h5>
     <a href="#">$1000</a>
   </div>
 </div>
-     <div class="card col-xl-4 col-lg-4 d-xl-block d-lg-block d-md-none d-sm-none d-none">
-  <img class="card-img-top" src="https://emania.vteximg.com.br/arquivos/ids/158213-1000-1000/Produto8185.5db2ff4f88d432db0a146b74edce1241.jpg?v=636517195737330000" alt="Card image cap">
+</div>
+    <div class="col-xl-4 col-lg-4">
+ 		<div class="card" >
+  <img class="card-img-top img-fluid" src="https://emania.vteximg.com.br/arquivos/ids/158213-1000-1000/Produto8185.5db2ff4f88d432db0a146b74edce1241.jpg?v=636517195737330000" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Camera</h5>
     <a href="#">$200</a>
   </div>
 </div>
-     <div class="card col-xl-4 col-lg-4 d-xl-block d-lg-block d-md-none d-sm-none d-none">
-  <img class="card-img-top" src="https://lojamultilaser.vteximg.com.br/arquivos/ids/179789-1000-1000/wc045_01.jpg?v=636616781739200000" alt="Card image cap">
+</div>
+    <div class="col-xl-4 col-lg-4">
+ 		<div class="card" >
+  <img class="card-img-top img-fluid" src="https://lojamultilaser.vteximg.com.br/arquivos/ids/179789-1000-1000/wc045_01.jpg?v=636616781739200000" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Webcam</h5>
     <a href="#">$1150</a>
   </div>
-</div>    
+</div>  
+</div>  
     </div>
 
 
-
-
-<div class='container'>
+<div class='container d-sm-none d-none d-md-none d-lg-block d-xl-block'>
 <h3 class="mx-auto" style="width: 200px;">
   NEW
 </h3>
 	<div class="row">
  <div class="card col col-sm col-md col-lg col-xl">
-  <img class="card-img-top" src="https://emania.vteximg.com.br/arquivos/ids/193280-1000-1000/Camera-Canon-Eos-Rebel-T100-com-Lente-Ef-s-18-55mm-III.jpg?v=636905080117500000" alt="Card image cap">
+  <img class="card-img-top img-fluid" src="https://emania.vteximg.com.br/arquivos/ids/193280-1000-1000/Camera-Canon-Eos-Rebel-T100-com-Lente-Ef-s-18-55mm-III.jpg?v=636905080117500000" alt="Card image cap">
   <div class="card-body"> <a href="#" class="btn btn-primary">View more</a>
   </div>
 </div>
       <div class="card col col-sm col-md col-lg col-xl">
-  <img class="card-img-top" src="https://emania.vteximg.com.br/arquivos/ids/158213-1000-1000/Produto8185.5db2ff4f88d432db0a146b74edce1241.jpg?v=636517195737330000" alt="Card image cap">
+  <img class="card-img-top img-fluid" src="https://emania.vteximg.com.br/arquivos/ids/158213-1000-1000/Produto8185.5db2ff4f88d432db0a146b74edce1241.jpg?v=636517195737330000" alt="Card image cap">
   <div class="card-body"><a href="#" class="btn btn-primary">View more</a>
   </div>
 </div>
        <div class="card col col-sm col-md col-lg col-xl">
-  <img class="card-img-top" src="https://moveissimonetti.vteximg.com.br/arquivos/ids/158005-1000-1000/49966.jpg?v=636277109575730000" alt="Card image cap">
+  <img class="card-img-top img-fluid" src="https://moveissimonetti.vteximg.com.br/arquivos/ids/158005-1000-1000/49966.jpg?v=636277109575730000" alt="Card image cap">
   <div class="card-body">    <a href="#" class="btn btn-primary">View more</a>
   </div>
 </div>
       <div class="card col col-sm col-md col-lg col-xl">
-  <img class="card-img-top" src="https://www.weststyle.de/out/pictures/generated/product/2/1000_1000_85/ws-petromax-feuertopf-ft3-dutch-oven-02.jpg" alt="Card image cap">
+  <img class="card-img-top img-fluid" src="https://www.weststyle.de/out/pictures/generated/product/2/1000_1000_85/ws-petromax-feuertopf-ft3-dutch-oven-02.jpg" alt="Card image cap">
   <div class="card-body">  
     <a href="#" class="btn btn-primary">View more</a>
   </div>
 </div>
  <div class="card col col-sm col-md col-lg col-xl">
-  <img class="card-img-top" src="https://emania.vteximg.com.br/arquivos/ids/193280-1000-1000/Camera-Canon-Eos-Rebel-T100-com-Lente-Ef-s-18-55mm-III.jpg?v=636905080117500000" alt="Card image cap">
+  <img class="card-img-top img-fluid" src="https://emania.vteximg.com.br/arquivos/ids/193280-1000-1000/Camera-Canon-Eos-Rebel-T100-com-Lente-Ef-s-18-55mm-III.jpg?v=636905080117500000" alt="Card image cap">
   <div class="card-body"> <a href="#" class="btn btn-primary">View more</a>
   </div>
 </div>

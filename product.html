@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <title>Hello, world!</title>
   </head>
@@ -37,15 +38,16 @@
       My account
       </button>
        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-         <a class="dropdown-item" href="#">
+         <a class="dropdown-item" href="history.html">
           <button type="button" class="btn btn-primary">    
             wishlist <span class="badge badge-light">9</span>
              <span class="sr-only">unread messages</span>
         </button>
         </a>
+           <a class="dropdown-item" href="account.html">Info</a>
            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registrationModal">Registration</a>
-           <a class="dropdown-item" href="#">Shopping history</a>
+           <a class="dropdown-item" href="history.html">Shopping history</a>
        </div>
     </div>
   </div>
@@ -87,28 +89,62 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
-            <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<form>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">First name</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" value="Lilith" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer02">Last name</label>
+      <input type="text" class="form-control is-valid" id="validationServer02" value="Mikayelyan" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
   </div>
-            <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">City</label>
+      <input type="text" class="form-control is-invalid" id="validationServer03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationServer04">State</label>
+      <select class="custom-select is-invalid" id="validationServer04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationServer05">Zip</label>
+      <input type="text" class="form-control is-invalid" id="validationServer05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
   </div>
-            <div class="form-group">
-    <label for="exampleFormControlSelect1">Age</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>12</option>
-      <option>13</option>
-      <option>14</option>
-      <option>15</option>
-      <option>16</option>
-    </select>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
   </div>
-           <button type="submit" class="btn btn-primary">Register</button>
-          
-       </form>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
       </div>
     </div>
   </div>
@@ -131,12 +167,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
+        <li class="navbar-nav mr-auto">
+          <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>       
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Shop
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="shop.html">shop</a>
             <a class="dropdown-item" href="#">Another action</a>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
@@ -173,13 +211,6 @@
       </ul>
     </div>
   </nav>
-  <nav>
-    <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Electronics</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Sales</li>
-  </ol>
-</nav>
 
 
 <h1 class="text-primary">ASUS VivoBook</h1>
@@ -187,12 +218,12 @@
 <div class="row">
   <div class="col col-xl-3 col-lg-3 col-md-3 d-none d-sm-none d-md-block d-lg-block d-xl-block ">
     <div class="row">
-      <div class="col col-xl-12 col-lg-12 col-md-12 d-none d-sm-none d-md-block d-lg-block d-xl-block "> <img src="https://www.amazon.com/images/I/51D2nDZCTQL._AC_SL1500_.jpg" class="img-thumbnail img-fluid w-50"></div>
-      <div class="col col-xl-12 col-lg-12 col-md-12 d-none d-sm-none d-md-block d-lg-block d-xl-block"> <img src="https://www.amazon.com/images/I/61jZK77yveL._AC_SL1500_.jpg" class="img-thumbnail img-fluid w-50"></div>
-      <div class="col col-xl-12 col-lg-12 col-md-12 d-none d-sm-none d-md-block d-lg-block d-xl-block"> <img src="https://www.amazon.com/images/I/811H75GvLTL._AC_SL1500_.jpg" class="img-thumbnail img-fluid w-50"></div>
+      <div class="col col-xl-12 col-lg-12 col-md-12 d-none d-sm-none d-md-block d-lg-block d-xl-block "> <a data-fancybox="gallery" href="https://www.amazon.com/images/I/51D2nDZCTQL._AC_SL1500_.jpg"> <img src="https://www.amazon.com/images/I/51D2nDZCTQL._AC_SL1500_.jpg" class="img-thumbnail img-fluid w-50"></a></div>
+      <div class="col col-xl-12 col-lg-12 col-md-12 d-none d-sm-none d-md-block d-lg-block d-xl-block"> <a data-fancybox="gallery" href="https://www.amazon.com/images/I/61jZK77yveL._AC_SL1500_.jpg"> <img src="https://www.amazon.com/images/I/61jZK77yveL._AC_SL1500_.jpg" class="img-thumbnail img-fluid w-50"></a></div>
+      <div class="col col-xl-12 col-lg-12 col-md-12 d-none d-sm-none d-md-block d-lg-block d-xl-block"> <a data-fancybox="gallery" href="https://www.amazon.com/images/I/811H75GvLTL._AC_SL1500_.jpg"> <img src="https://www.amazon.com/images/I/811H75GvLTL._AC_SL1500_.jpg" class="img-thumbnail img-fluid w-50"></a></div>
     </div>
       </div>
-    <div class="col col-xl-3"> <img src="https://www.amazon.com/images/I/81mZ4eDWYkL._AC_SL1500_.jpg" class="img-fluid w-100"></div>
+    <div class="col col-xl-3"> <a data-fancybox="gallery" href="https://www.amazon.com/images/I/81mZ4eDWYkL._AC_SL1500_.jpg"><img src="https://www.amazon.com/images/I/81mZ4eDWYkL._AC_SL1500_.jpg" class="img-fluid w-100"></a></div>
     <div class="col col-xl-3">
       <h2>$200</h2>
       <form>
@@ -208,7 +239,7 @@
     </div>
   </div>
 </form>
-<button type="button" class="btn btn-primary">Add to card</button>
+<a href="card.html" class="btn btn-primary"> Add to card</a>
       <h4>Options</h4>
       <div class="custom-control custom-switch">
   <input type="checkbox" class="custom-control-input" id="customSwitch1">
@@ -231,7 +262,7 @@
 </div>
 <div class="row">
 <p>
-  <a class="btn btn-primary d-xl-block d-lg-block d-md-block d-sm-none d-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a class="btn btn-primary d-xl-block d-lg-block d-md-block d-sm-block d-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Overview
   </a>
 </p>
@@ -248,7 +279,7 @@
 </div>
 </div>
 <p>
-  <a class="btn btn-primary d-xl-block d-lg-block d-md-block d-sm-none d-none" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a class="btn btn-primary d-xl-block d-lg-block d-md-block d-sm-block d-none" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
     Rating
   </a>
 </p>
@@ -265,7 +296,7 @@
 </div>
 </div>
 <p>
-  <a class="btn btn-primary d-xl-block d-lg-block d-md-block d-sm-none d-none" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a class="btn btn-primary d-xl-block d-lg-block d-md-block d-sm-block d-none" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
     Link
   </a>
 </p>
@@ -382,5 +413,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   </body>
 </html>

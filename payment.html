@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Payment</title>
   </head>
   <body>
-
-
-
-  <div class="container ">
+ <div class="container">
     <form>
       <div class="row">
       <div class="form-group col-xl col-lg col-md d-sm-none d-none d-lg-block d-xl-block d-md-block">
@@ -39,7 +36,7 @@
       <button class="btn btn-primary dropdown-toggle col-xl col-lg col-md d-sm-none d-none d-lg-block d-xl-block d-md-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       My account
       </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
          <a class="dropdown-item" href="history.html">
           <button type="button" class="btn btn-primary">    
             wishlist <span class="badge badge-light">9</span>
@@ -81,7 +78,7 @@
     </div>
   </div>
 </div>
-      <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -91,7 +88,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <form>
+<form>
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer01">First name</label>
@@ -213,87 +210,63 @@
       </ul>
     </div>
   </nav>
-  <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Electronics</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Sales</li>
-  </ol>
-</nav>
-
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Hot sales!</strong> You have to register to buy something.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-
-
-<div class="container d-flex justify-content-center">
-  <div class="row">
-    <div class="col col-xl-3 col-lg-3 col-md-3 d-md-block d-xl-block d-lg-block d-none d-sm-none h-100 bg-dark">
-      <a href="">Select brand</a><br>
-      <a href="">Select size</a><br>
-      <a href="">Select CPU</a><br>
-      <a href="">Select brand</a><br>
-      <a href="">Select size</a><br>
-      <a href="">Select CPU</a><br>
-      <a href="">Select brand</a><br>
-      <a href="">Select size</a><br>
-      <a href="">Select CPU</a>
-      
+<br>
+<img src="http://www.emporium.themeseason.com/assets/images/others/card-icon.png" class="img-fluid">
+<br><br>
+  <form>
+    <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Card holder name">
     </div>
-    <div class="col ">
-      <div class="card mb-3">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="https://www.amazon.com/images/I/81mZ4eDWYkL._AC_SL1500_.jpg" class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <a class="card-title" href="product.html">ASUS VivoBook</a>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="product.html" class="btn btn-primary">Go somewhere</a>
-        </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Card number">
     </div>
   </div>
-</div>
-<div class="card mb-3">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="https://elektra.vteximg.com.br/arquivos/ids/369327-1000-1000/8002465.jpg?v=636461828529500000" class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+</form>
+<br>
+  <form>
+    <div class="row ">
+    <div class="col col-xl-4">
+         <div class="form-group">
+      <select id="inputState" class="form-control">
+        <option selected>Expired year</option>
+        <option>...</option>
+      </select>
     </div>
   </div>
-</div>
-<div class="card mb-3">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="http://www.belkin.com/images/productmt_aem/969f9aaa-7c7c-45c6-a5b4-3936de9a9c7a/renditions/cq5dam.web.1000.1000.jpeg" class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+    <div class="col col-xl-4">
+              <div class="form-group">
+      <select id="inputState" class="form-control">
+        <option selected>Expired month</option>
+        <option>...</option>
+      </select>
     </div>
   </div>
-</div>
-      
+    <div class="col col-xl-4">
+      <input type="text" class="form-control" placeholder="CVV">
     </div>
   </div>
+</form>
+
+<div class="d-flex justify-content-end">
+<a href="order.html" class="btn btn-primary">Order</a>
 </div>
+<br>
 
 
-<div class="container">
+
+
+
+
+
+
+
+
+
+
+
+<div class="fixed-bottom">
+ <div class="container">
   <div class="row">
     <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
       <a href="" class="badge badge-primary">CONTACT US</a>
@@ -335,20 +308,11 @@
       <h6>©Tumo Center For Creative Technologies</h6>
     </div>
 </div>
-
-
-
-
-
-
-
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
