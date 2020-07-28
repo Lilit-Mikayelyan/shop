@@ -11,28 +11,40 @@
     <title>Card</title>
   </head>
   <body>
- <div class="container">
+<div class="container">
     <form>
       <div class="row">
-      <div class="form-group col-xl col-lg col-md d-sm-block d-block d-lg-block d-xl-block d-md-block">
+      <div class="form-group col-xl col-lg col-md d-sm-none d-none d-lg-block d-xl-block d-md-block">
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone number">
       </div>
       </form>
-       <div class="form-group col-xl col-lg col-md d-sm-block d-block d-lg-block d-xl-block d-md-block">
+       <div class="form-group col-xl col-lg col-md d-sm-none d-none d-lg-block d-xl-block d-md-block">
         <select id="inputState" class="form-control">
           <option>Armenian</option>         
           <option>English</option>          
           <option>Russian</option>
         </select>
       </div>
-       <div class="form-group col-xl col-lg col-md d-sm-block d-block d-lg-block d-xl-block d-md-block">
+       <div class="form-group col-xl col-lg col-md d-sm-none d-none d-lg-block d-xl-block d-md-block">
         <select id="inputState" class="form-control">
           <option>֏</option>
           <option>$</option>
           <option>€</option>
         </select>
       </div>
-      <div class="dropdown">
+    </div>
+       <div>
+     
+    <nav class="navbar navbar-warning bg-warning">
+   <a class="navbar-brand">
+    <h2>SHOP</h2>
+    </a>
+  
+  <form class="form-inline d-none d-md-block">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  <div class="dropdown">
       <button class="btn btn-primary dropdown-toggle col-xl col-lg col-md d-sm-block d-block d-lg-block d-xl-block d-md-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       My account
       </button>
@@ -77,6 +89,127 @@
       </div>
     </div>
   </div>
+</div>
+  </nav>
+   
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="navbar-nav mr-auto">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>       
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Shop
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="shop.html">Electronics</a>
+            <a class="dropdown-item" href="#">Phones</a>
+            <a class="dropdown-item" href="#">Sales</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Phones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">IPhone</a>
+            <a class="dropdown-item" href="#">Samsung</a>
+            <a class="dropdown-item" href="#">Xiaomi</a>
+          </div>
+        </li>      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sales
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Phones</a>
+            <a class="dropdown-item" href="#">Laptops</a>
+            <a class="dropdown-item" href="#">Kitchen Electronics</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<table class="table col-12">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td class="w-25"><img src="https://www.amazon.com/images/I/81mZ4eDWYkL._AC_SL1500_.jpg" class="img-fluid w-25"></td>
+      <td>ASUS VivoBook</td>
+      <td>$200</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td class="w-25"><img src="https://elektra.vteximg.com.br/arquivos/ids/369327-1000-1000/8002465.jpg?v=636461828529500000" class="img-fluid w-25"></td>
+      <td>Washing machine</td>
+      <td>$200</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="d-flex justify-content-end">Total:$400</h2>
+<div class="d-flex justify-content-end">
+<a href="address.html" class="btn btn-primary">Check out </a>
+</div>
+<br>
+
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
+      <a href="" class="badge badge-primary">CONTACT US</a>
+    </div>
+    <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
+      <a href="" class="badge badge-primary">LIVE CHAT</a>
+    </div>
+    <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
+      <a href="" class="badge badge-primary">SHIPPING</a>
+    </div>
+    <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
+      <a href="" class="badge badge-primary">TERM&CONDITIONS</a>
+    </div>
+</div>
+</div>
+   <div class="container">
+      <div class="row">
+    <div class="col-xl col-lg col-md d-none d-sm-none d-md-block d-lg-block d-xl-block bg-warning text-dark border">
+      <h5>Profile</h5>
+      <a href="" data-toggle="modal" data-target="#loginModal">Login</a><br>
+      <a href="" data-toggle="modal" data-target="#registrationModal">Registration</a><br>
+      <a href="account.html">INFO</a>
+    </div>
+    <div class="col-xl col-lg col-md d-none d-sm-none d-md-block d-lg-block d-xl-block bg-warning text-dark border">
+      <h5>Shop</h5>
+      <a href="">Sales</a><br>
+      <a href="">New</a><br>
+      <a href="">Daily deals</a>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div class="row bg-warning">
+    <div class="col-sm-12 com-xl-12 border">
+      <h6>©Tumo Center For Creative Technologies</h6>
+    </div>
 </div>
      <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -148,150 +281,6 @@
     </div>
   </div>
 </div>
-    <nav class="navbar navbar-warning bg-warning">
-   <a class="navbar-brand">
-    <h2>SHOP</h2>
-    </a>
-  
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-  </form>
-  </nav>
-   
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="navbar-nav mr-auto">
-          <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>       
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Shop
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="shop.html">shop</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Product</th>
-      <th scope="col">Name</th>
-      <th scope="col">Price</th>
-      <th scope="col">Quality</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td><img src="https://www.amazon.com/images/I/81mZ4eDWYkL._AC_SL1500_.jpg" class="img-fluid w-25"></td>
-      <td>ASUS VivoBook</td>
-      <td>$200</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 class="d-flex justify-content-end">Total:$200</h2>
-<div class="d-flex justify-content-end">
-<a href="address.html" class="btn btn-primary">Check out </a>
-</div>
-<br>
-
-
-
-
-
- <div class="container">
-  <div class="row">
-    <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
-      <a href="" class="badge badge-primary">CONTACT US</a>
-    </div>
-    <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
-      <a href="" class="badge badge-primary">LIVE CHAT</a>
-    </div>
-    <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
-      <a href="" class="badge badge-primary">SHIPPING</a>
-    </div>
-    <div class="col-lg-3 col-xl-3 col-sm-12 bg-primary text-white border text-center">
-      <a href="" class="badge badge-primary">TERM&CONDITIONS</a>
-    </div>
-</div>
-</div>
-   <div class="container">
-      <div class="row">
-    <div class="col-xl col-lg col-md d-none d-sm-none d-md-block d-lg-block d-xl-block bg-warning text-dark border">
-      <h5>Link group</h5>
-      <a>link</a><br>
-      <a>link</a><br>
-      <a>link</a><br>
-      <a>link</a><br>
-      <a>link</a><br>
-    </div>
-    <div class="col-xl col-lg col-md d-none d-sm-none d-md-block d-lg-block d-xl-block bg-warning text-dark border">
-      <h5>Link group</h5>
-      <a>link</a><br>
-      <a>link</a><br>
-      <a>link</a><br>
-      <a>link</a><br>
-      <a>link</a><br>
-    </div>
-</div>
-</div>
-<div class="container">
-  <div class="row bg-warning">
-    <div class="col-sm-12 com-xl-12 border">
-      <h6>©Tumo Center For Creative Technologies</h6>
-    </div>
-</div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -299,3 +288,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
+
+     
